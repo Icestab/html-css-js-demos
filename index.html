@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>八卦图</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            border: 0;
+            background-color: #eee;
+        }
+
+        #wrapper {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        span {
+            margin-top: 1em;
+        }
+
+        #BaGua {
+            height: 400px;
+            width: 400px;
+            position: relative;
+            border-radius: 50%;
+            overflow: hidden;
+            animation: 2s linear infinite x;
+
+        }
+
+        @keyframes x {
+            from {
+                transform: rotate(0);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #BaGua div:first-child {
+            width: 200px;
+            height: 400px;
+            background-color: black;
+            position: absolute;
+
+        }
+
+        #BaGua div:nth-child(2) {
+            width: 200px;
+            height: 400px;
+            background-color: white;
+            position: absolute;
+            left: 200px;
+        }
+
+        #BaGua div:nth-child(3) {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 100px;
+            border-radius: 50%;
+        }
+
+        #BaGua div:nth-child(4) {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            left: 100px;
+            border-radius: 50%;
+        }
+
+        #BaGua div:nth-child(5) {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            position: absolute;
+            top: 75px;
+            left: 175px;
+            border-radius: 50%;
+        }
+
+        #BaGua div:nth-child(6) {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            position: absolute;
+            bottom: 75px;
+            left: 175px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="BaGua">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <span>道可道，非常道</span>
+    </div>
+</body>
+
+</html>
