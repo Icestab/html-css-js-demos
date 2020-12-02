@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>悬浮掉落头像</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        #wrapper {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #avatar {
+            height: 200px;
+            width: 200px;
+            border: 1px solid #eee;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        #avatar:hover {
+            animation: 0.5s linear forwards x;
+        }
+
+
+
+
+        @keyframes x {
+            0% {
+                transform: translate(0, 0) rotate(0);
+                /* transform: rotate(0); */
+            }
+
+            25% {
+                transform: translate(50px, 25px) rotate(0.125turn);
+                /* transform: rotate(0); */
+            }
+
+            50% {
+                transform: translate(100px, 50px) rotate(0.25turn);
+                /* transform: rotate(0.5turn); */
+            }
+
+            75% {
+                transform: translate(50px, 75px) rotate(0.375turn);
+                /* transform: rotate(0); */
+            }
+
+            100% {
+                transform: translate(50px, 100px) rotate(0.4turn);
+            }
+        }
+
+        #static {
+            height: 200px;
+            width: 200px;
+            border: 1px solid #eee;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="static">
+            <div id="avatar">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606927506872&di=2e82002f8864fe60b9ce34561382a104&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fw%3D580%2Fsign%3D7780a2f58435e5dd902ca5d746c7a7f5%2F72f0c3025aafa40f73b98c7aaa64034f78f0191d.jpg"
+                    alt="flysch">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
