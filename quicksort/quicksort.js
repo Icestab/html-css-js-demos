@@ -10,5 +10,5 @@ function quicksort(arr) {
 	}
 }
 let arr = [1, 2, 12, 8, -2, 0, 4, 5, 7, 1, 4]
-console.log(arr);
-console.log(quicksort(arr))
+console.log('测试数组' + arr);
+console.log('排序后数组' + quicksort(arr))
