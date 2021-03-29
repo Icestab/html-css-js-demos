@@ -8,6 +8,7 @@ div.onmousedown = (e) => {
     startY = e.clientY
     flag = true
 }
+//当鼠标按键松开时取消移动
 document.onmouseup = (e) => {
 
     flag = false
